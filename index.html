@@ -758,17 +758,6 @@ var bounds0 = [[0,0], [-1310,1138]];
 var image0 = L.imageOverlay('img/mapblank.webp', bounds0).addTo(map);
 map.fitBounds(bounds0);
 
-var CamIcon = L.icon({
-	iconUrl: 'img/Camarilla.webp',
-	iconSize: [20, 44],
-	iconAnchor: [10, 44],
-	tooltipAnchor: [0, 44],
-	popupAnchor: [0, -44],
-	shadowUrl: 'img/CamShadow.webp',
-	shadowSize: [44, 44],
-	ShadowAnchor: [0, 0]
-});
-
 <!--Baton Rouge inner city-->
 
 <!--The Avenues-->
@@ -892,8 +881,46 @@ var latlngsLW = [[-316,928],[-316,952],[-305,999],[-328,1037],[-373,1035],[-385,
 
 var polygonLW = L.polygon(latlngsLW, {color: 'black', stroke: true, opacity: [0.75], fillOpacity: [0.2], smoothFactor: [3.0]}).addTo(map).bindPopup('<p><center><u>Denham Springs</u></p>');
 
+var CamIcon = L.icon({
+	iconUrl: 'img/Camarilla.webp',
+	iconSize: [20, 44],
+	iconAnchor: [10, 44],
+	tooltipAnchor: [0, 44],
+	popupAnchor: [0, -44],
+});
+var CollegeIcon = L.icon({
+	iconUrl: 'img/College.webp',
+	iconSize: [28, 28],
+	iconAnchor: [14, 28],
+	tooltipAnchor: [0, 28],
+	popupAnchor: [0, -28],
+	});
+var FootballIcon = L.icon({
+	iconUrl: 'img/Football.webp',	
+	iconSize: [28, 28],
+	iconAnchor: [14, 28],
+	tooltipAnchor: [0, 28],
+	popupAnchor: [0, -28],
+	});
+var AirportIcon = L.icon({
+	iconUrl: 'img/Airport.webp',	
+	iconSize: [28, 28],
+	iconAnchor: [14, 28],
+	tooltipAnchor: [0, 28],
+	popupAnchor: [0, -28],
+	});
+
 <!--Elysium-->
 <!-- L.marker([-363.5,927.5],{icon: CamIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center>Elysium<br />New Orleans Museum of Art</center></p>');-->
+
+<!--Louisiana State University-->
+L.marker([-555,458],{icon: CollegeIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Louisiana State University</u></p>');
+
+<!--Tiger Stadium-->
+L.marker([-559,435],{icon: FootballIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Tiger Stadium</u></p>');
+
+<!--Baton Rouge Metropolitan Airport-->
+L.marker([-246,510],{icon: AirportIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Baton Rouge Metropolitan Airport</u></p>');
 
 	</script>
 
