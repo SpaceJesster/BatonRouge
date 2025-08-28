@@ -1123,6 +1123,13 @@ var HouseIcon = L.icon({
 	tooltipAnchor: [0, 28],
 	popupAnchor: [0, -28],
 	});
+var GasIcon = L.icon({
+	iconUrl: 'img/Gas.webp',
+	iconSize: [28, 28],
+	iconAnchor: [14, 14],
+	tooltipAnchor: [0, 28],
+	popupAnchor: [0, -28],
+	});
 
 <!--Icon Placement-->
 
@@ -1161,6 +1168,9 @@ L.marker([-438,642],{icon: ShoppingIcon},{riseOnHover: true}).addTo(map).bindPop
 
 <!--Rowan Valentine's Residence-->
 L.marker([-630,411],{icon: HouseIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Rowan Valentine\'s Residence</u></br>Fame 3 Movie Star</p>');
+
+<!--Lucky's Corner Gas Station-->
+L.marker([-554,628],{icon: GasIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Lucky\'s Corner Gas Station</u></p>');
 
 <!--Backwoods Shack-->
 <!--L.marker([-1264,685],{icon: AhrimanesIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Backwoods Shack</u></p>');-->
