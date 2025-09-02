@@ -1133,9 +1133,6 @@ var GasIcon = L.icon({
 
 <!--Icon Placement-->
 
-<!--Elysium-->
-<!-- L.marker([-363.5,927.5],{icon: CamIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center>Elysium<br />New Orleans Museum of Art</center></p>');-->
-
 <!--Tiger Stadium-->
 L.marker([-558,435],{icon: FootballIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Tiger Stadium</u></p>');
 
@@ -1167,10 +1164,10 @@ L.marker([-666,616.5],{icon: FlowerIcon},{riseOnHover: true}).addTo(map).bindPop
 L.marker([-438,642],{icon: ShoppingIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Cortana Mall</u></p>');
 
 <!--Residence-->
-L.marker([-630,411],{icon: HouseIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Residence</u></br>Famed Movie Star</br></br>Rowan Valentine</p>');
+L.marker([-630,411],{icon: HouseIcon},{riseOnHover: true}).setZIndexOffset(1000).addTo(map).bindPopup('<p><center><u>Residence</u></br>Famed Movie Star</br></br>Rowan Valentine</p>');
 
 <!--Lucky's Corner Gas Station-->
-L.marker([-554,628],{icon: GasIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Lucky\'s Corner Gas Station</u></br></br>Liam Song</p>');
+L.marker([-554,628],{icon: GasIcon},{riseOnHover: true}).setZIndexOffset(1000).addTo(map).bindPopup('<p><center><u>Lucky\'s Corner Gas Station</u></br></br>Liam Song</p>');
 
 <!--Backwoods Shack-->
 <!--L.marker([-1264,685],{icon: AhrimanesIcon},{riseOnHover: true}).addTo(map).bindPopup('<p><center><u>Backwoods Shack</u></p>');-->
