@@ -1,1 +1,1 @@
-Interactive map for Constantinople by Night
+Interactive map of 1992 Baton Rouge for Louisiana by Night
